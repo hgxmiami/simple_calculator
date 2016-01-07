@@ -1,0 +1,77 @@
+<html>
+<head>Calculator!</head>
+<body>
+    <script type="text/javascript" src="js/calculator.js"></script>
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="txtTotal" name="txtTotal" value="0"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="txtTrai" name="txtTrail" disabled='true' value="0"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="btnl" name="bnt1" value="1" onclick="nextVal(1);" />
+            </td>
+            <td>
+                <input type="button" id="btn2" name="bnt2" value="2" onclick="nextVal(2);" />
+            </td>
+            <td>
+                <input type="button" id="btn3" name="bnt3" value="3" onclick="nextVal(3);" />
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="btn4" name="bnt4" value="4" onclick="nextVal(4);" />
+            </td>
+            <td>
+                <input type="button" id="btn5" name="bnt5" value="5" onclick="nextVal(5);" />
+            </td>
+            <td>
+                <input type="button" id="btn6" name="bnt6" value="6" onclick="nextVal(6);" />
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="btn7" name="bnt7" value="7" onclick="nextVal(7);" />
+            </td>
+            <td>
+                <input type="button" id="btn8" name="bnt8" value="8" onclick="nextVal(8);" />
+            </td>
+            <td>
+                <input type="button" id="btn9" name="bnt9" value="9" onclick="nextVal(9);" />
+            </td>
+            <td>
+                <input type="button" id="clear" name="clear" value="C" onclick="clearCalc()" />
+            </td>   
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="plus" name="plus" value="+" onclick="setFunction('plus');" />
+            </td>
+            <td>
+                <input type="button" id="btn0" name="btn0" value="0" onclick="nextVal(0);" />
+            </td>
+            <td>
+                <input type="button" id="minus" name="minus" value="-" onclick="setFunction('minus');" />
+            </td>
+            <td>
+                <input type="button" id="equal" name="equal" value="=" onclick="sum();" />
+            </td>   
+        </tr>
+    </table>
+</body>
+</html>
